@@ -1,17 +1,16 @@
-import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
-import { Grid } from "@mui/material";
+import React from "react";
 
-function ItemCard({ item }) {
+function ItemCard({ item: { title, body } }) {
   return (
     <Card style={{ margin: "1rem" }}>
       <CardContent>
         <Typography variant="h5" component="div">
-          {item.title}
+          {title}
         </Typography>
-        <Typography color="textSecondary">{item.body}</Typography>
+        <Typography color="textSecondary">{body}</Typography>
       </CardContent>
     </Card>
   );
