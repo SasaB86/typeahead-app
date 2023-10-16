@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# React Typeahead Component with Caching
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React typeahead component that provides suggestions fetched from a simple RESTful API. It also includes a caching mechanism to reduce redundant API requests.
 
-## Available Scripts
+# Features
 
-In the project directory, you can run:
+- Search and Select: Users can search for items and select multiple suggestions.
+- Cards: Selected items are displayed as cards.
+- Caching: Utilizes caching to improve performance by reducing API calls.
+- Error Handling: Provides error handling for network requests.
+- Testing: Includes test cases for components.
+- Responsive UI: Designed to work on various screen sizes.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have the following prerequisites:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js and npm installed. You can download and install Node.js from [nodejs.org](https://nodejs.org/).
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+git clone https://github.com/SasaB86/typeahead-app.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+cd typeahead-app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install the required dependencies:
 
-### `npm run eject`
+npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. This will start the development server, and you can access the application in your web browser at http://localhost:3000.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+- Enter a search term in the search input field.
+- As you type, suggestions will appear in the dropdown.
+- Select one or more suggestions by clicking on them.
+- The selected suggestions will appear as cards below.
+- Click the "Submit" button to create the selected item cards.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Caching
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application utilizes caching to reduce the number of API requests made. Cached data is stored in the browser's session storage.
 
-### Code Splitting
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To run tests for the application components, use the following command:
 
-### Analyzing the Bundle Size
+npm test
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Deployment
+To deploy the application to a production environment, you'll need to build the project using:
 
-### Making a Progressive Web App
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This will create an optimized production build in the build directory. You can then deploy this build to a web server or hosting service of your choice.
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you would like to contribute to this project or have suggestions for improvements, please feel free to submit issues or pull requests.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the LICENSE file for details.
